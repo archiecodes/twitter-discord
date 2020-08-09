@@ -1,0 +1,15 @@
+version: "3.4"
+
+services:
+  main:
+    build: .
+    restart: always
+    ports:
+      - 127.0.0.1:8080:8080
+    environment:
+      - DISCORD_TOKEN=
+      - DISCORD_CHANNEL=
+      - TWITTER_CONSUMER_KEY=
+      - TWITTER_CONSUMER_SECRET=
+      - TWITTER_TOKEN_KEY=
+      - TWITTER_TOKEN_SECRET=
